@@ -8,6 +8,8 @@ var remainder;
 // CONSTANTS
 // =========================================================
 const $cardPic = $('#cardPic');
+const $deckID = $('#deckID');
+const $remainder = $('#remainder');
 
 // GETS A NEW DECK
 // =========================================================
@@ -20,12 +22,21 @@ function consoleLog(event) {
     }).then(
         (data) => {
             deckID = data.deck_id;
+            remainder = data.remaining;
             console.log(deckID);
+            renderDeckID();
         },
         (error) => {
             console.log('bad request: ', error);
         }
     );
+        // APPENDS NEW CARD ID TO HTML DOC
+    // =========================================================
+    function renderDeckID(){
+        $deckID.text(`Unique Deck ID: ${deckID}`);
+        $remainder.text(`Remaining Cards: ${remainder}`);
+    }
+
 }
 
 // SHUFFLES THE CARDS
@@ -70,7 +81,7 @@ function consoleLog3(event) {
             console.log(remainder);
             console.log(cardPNG);
             // (need to call the appending function below)
-            render();
+            renderCard();
         },
         (error) => {
             console.log('bad request: ', error);
@@ -79,7 +90,9 @@ function consoleLog3(event) {
 
     // APPENDS SELECTED CARD TO HTML DOC
     // =========================================================
-    function render(){
+    function renderCard(){
         $cardPic.attr("src", cardPNG);
+        $deckID.text(`Unique Deck ID: ${deckID}`);
+        $remainder.text(`Remaining Cards: ${remainder}`);
     }
 }
