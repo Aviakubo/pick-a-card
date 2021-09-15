@@ -5,6 +5,10 @@ var shuffle;
 var drawCard;
 var remainder;
 
+// CONSTANTS
+// =========================================================
+const $cardPic = $('#cardPic');
+
 // GETS A NEW DECK
 // =========================================================
 $('#open').on('click', consoleLog);
@@ -61,11 +65,21 @@ function consoleLog3(event) {
         (data) => {
             drawCard = data.cards;
             remainder = data.remaining;
+            cardPNG = data.cards[0].images.png;
             console.log(drawCard);
             console.log(remainder);
+            console.log(cardPNG);
+            // (need to call the appending function below)
+            render();
         },
         (error) => {
             console.log('bad request: ', error);
         }
     );
+
+    // APPENDS SELECTED CARD TO HTML DOC
+    // =========================================================
+    function render(){
+        $cardPic.attr("src", cardPNG);
+    }
 }
