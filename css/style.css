@@ -1,7 +1,11 @@
 /* THE DESKTOP CODE I GUESS */
 body {
-    text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+}
+
+h1{
+    min-width: 200px;
 }
 
 p {
@@ -11,12 +15,10 @@ p {
 button {
     background-color: red;
     color: white;
-    padding: .5em 3em;
-    margin: .25px;
     border: none;
     border-radius: 6px;
     transition-duration: 0.4s;
-    width: 15%;
+    min-width: 200px;
 }
 
 button:hover {
@@ -27,10 +29,7 @@ button:hover {
 #cardStats {
     font-size: 14px;
     font-style: italic;
-}
-
-div {
-    text-align: center;
+    min-width: 200px;
 }
 
 ul {
