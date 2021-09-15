@@ -3,6 +3,27 @@ body {
     font-family: sans-serif;
 }
 
+button {
+    background-color: red;
+    color: white;
+    padding: .5em 3em;
+    margin: .25px;
+    border: none;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+    width: 15%;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+#cardStats {
+    font-size: 14px;
+    font-style: italic;
+}
+
 div {
     text-align: center;
 }
