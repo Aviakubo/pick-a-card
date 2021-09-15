@@ -1,6 +1,11 @@
+/* THE DESKTOP CODE I GUESS */
 body {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p {
+    margin: 5px;
 }
 
 button {
