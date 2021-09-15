@@ -17,8 +17,8 @@ p {
 button {
     background-color: red;
     color: white;
-    border: none;
-    border-radius: 6px;
+    border: 2px solid;
+    border-radius: 10px;
     transition-duration: 0.4s;
     min-width: 200px;
     min-height: 50px;
@@ -29,17 +29,19 @@ button {
 button:hover {
     background-color: white;
     color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #cardStats {
     font-size: 14px;
     font-style: italic;
     min-width: 200px;
-}
-
-ul {
-    display: inline-block;
-    text-align: left;
 }
 
 li {
