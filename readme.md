@@ -1,4 +1,6 @@
 Title: Pick a card
+The purpose of this app is to help the magician build trust with the audience.
+The magician can in no way manipulate the cards using sleight of hand.
 
 /*-----------------------------*/
 
