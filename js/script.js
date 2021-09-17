@@ -56,14 +56,22 @@ function consoleLog2(event) {
     }).then(
         (data) => {
             shuffle = data;
+            remainder = data.remaining;
             console.log(`Was it shuffled? ${shuffle.shuffled}`);
             console.log(`Was shuffle successful? ${shuffle.success}`);
             console.log(shuffle.deck_id);
+            renderDeckRem();
         },
         (error) => {
             console.log('bad request: ', error);
         }
     );
+    // =========================================================
+    // APPENDS REMAINING CARDS TO HTML DOC
+    // =========================================================
+        function renderDeckRem() {
+            $remainder.text(`Remaining Cards: ${remainder}`)
+        }
 }
 
 // =========================================================
