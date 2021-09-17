@@ -6,6 +6,8 @@ The magician can in no way manipulate the cards using sleight of hand.
 
 Technologies used: html, css, javascript, jquery, ajax
 
+Images: https://imgur.com/a/EZ0OZCq
+
 /*-----------------------------*/
 
 Getting started:
@@ -14,6 +16,7 @@ Getting started:
 3. Draw a card!
 
 https://pick-a-card-magic.vercel.app/
+
 
 /*-----------------------------*/
 
