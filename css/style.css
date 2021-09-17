@@ -50,7 +50,7 @@ li {
 
 #cardPic {
     max-width: 226px;
-    border: 2px solid black;
-    border-radius: 10px; 
-    padding: 8px;
+    /* border: 2px solid black; */
+    /* border-radius: 10px;  */
+    padding: 10px;
 }
