@@ -47,3 +47,10 @@ button:active {
 li {
     list-style-type: none;
 }
+
+#cardPic {
+    max-width: 226px;
+    border: 2px solid black;
+    border-radius: 10px; 
+    padding: 8px;
+}
