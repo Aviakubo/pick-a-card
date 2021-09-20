@@ -7,7 +7,9 @@ The magician can in no way manipulate the cards using sleight of hand.
 Technologies used: html, css, javascript, jquery, ajax
 
 Images: https://imgur.com/a/EZ0OZCq
-![Wireframe](https://imgur.com/a/EZ0OZCq)
+![Desktop Wireframe](https://i.imgur.com/jejdpM9.png)
+
+![Mobile Wireframe](https://i.imgur.com/6xSElip.png)
 
 /*-----------------------------*/
 
